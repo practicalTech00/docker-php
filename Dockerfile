@@ -10,4 +10,4 @@ FROM nginx:${NGINX_VERSION} as nginx
 
 COPY docker/nginx/default.template.conf /etc/nginx/conf.d/default.conf
 
-WORKDIR /var/www/wtc/public
+WORKDIR /var/www/project/public

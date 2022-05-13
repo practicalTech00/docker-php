@@ -4,7 +4,7 @@ services:
       context: .
       target: php-fpm
     volumes:
-      - .:/var/www/wtc
+      - .:/var/www/project
   nginx:
     build:
       context: .
@@ -12,6 +12,6 @@ services:
     depends_on:
       - php
     volumes:
-      - ./public:/var/www/wtc/public
+      - ./public:/var/www/project/public
     ports:
       - "80:80"
